@@ -140,6 +140,7 @@ main {
   width: 100%;
   padding: 1.5rem;
   text-align: center;
+  min-height: 100vh;
 }
 main h1 {
   color: rgb(252, 252, 252);
