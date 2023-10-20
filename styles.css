@@ -210,5 +210,6 @@ img:hover {
   }
   section h2 {
     align-self: center;
+    margin-bottom: 8rem;
   }
 }
