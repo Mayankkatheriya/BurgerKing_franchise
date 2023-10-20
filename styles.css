@@ -1,0 +1,205 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: cursive;
+  min-height: 100vh;
+  display: flex;
+}
+aside {
+  background-image: linear-gradient(to top, #feada6 0%, #f5efef 100%);
+  width: 30%;
+  max-width: 350px;
+  min-width: 175px;
+  padding: 1rem;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+aside h1 {
+  color: #ff2727;
+  font-size: 2.5rem;
+  margin-bottom: 2rem;
+  text-decoration: double underline;
+  text-shadow: 2px 2px 5px rgb(36, 34, 34);
+}
+.checkbox-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+.item {
+  gap: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  accent-color: rgb(255, 150, 109);
+}
+label {
+  color: #442d0a;
+  margin-left: 5px;
+  font-size: 1rem;
+  text-shadow: -2px -4px 5px grey;
+}
+
+button {
+  appearance: button;
+  background-color: #1899d6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  box-sizing: border-box;
+  color: #ffffff;
+  cursor: pointer;
+  display: inline-block;
+  font-family: din-round, sans-serif;
+  font-size: 15px;
+  font-weight: 700;
+  letter-spacing: 0.8px;
+  line-height: 20px;
+  margin: 0;
+  outline: none;
+  overflow: visible;
+  padding: 13px 16px;
+  text-align: center;
+  text-transform: uppercase;
+  touch-action: manipulation;
+  transform: translateZ(0);
+  transition: filter 0.2s;
+  user-select: none;
+  -webkit-user-select: none;
+  vertical-align: middle;
+  white-space: nowrap;
+  width: 100%;
+}
+
+button:after {
+  background-clip: padding-box;
+  background-color: #1cb0f6;
+  border: solid transparent;
+  border-radius: 16px;
+  border-width: 0 0 4px;
+  bottom: -4px;
+  content: "";
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: -1;
+}
+
+button:main,
+button:focus {
+  user-select: auto;
+}
+
+button:hover:not(:disabled) {
+  filter: brightness(1.1);
+  -webkit-filter: brightness(1.1);
+}
+
+button:disabled {
+  cursor: auto;
+  opacity: 0.4;
+}
+
+button:active {
+  border-width: 4px 0 0;
+  background: none;
+}
+h4 {
+  margin-top: 1rem;
+  font-size: 0.6rem;
+  color: rgb(46, 29, 8);
+  text-align: center;
+}
+h4 span a {
+  color: rgb(255, 0, 0);
+  font-size: 0.8rem;
+  transition: all 0.6s ease-in-out;
+}
+span a:hover {
+  font-size: 2rem;
+}
+main {
+  background-image: url(./Assets/bg-2.jpg);
+  background-position: center 30%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 100%;
+  padding: 1.5rem;
+  text-align: center;
+}
+main h1 {
+  color: rgb(252, 252, 252);
+  font-size: 2.5rem;
+  text-transform: capitalize;
+  text-decoration: dotted underline;
+  margin-bottom: 2rem;
+}
+section {
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+section h2 {
+  padding: 0 10px;
+  background: linear-gradient(to top, #fff1eb 0%, #ace0f9 100%);
+  color: #581500;
+  font-size: 1.3rem;
+  align-self: flex-start;
+  margin-bottom: 1.5rem;
+  border-radius: 20px;
+  text-shadow: 2px 2px 5px rgb(0, 0, 92);
+}
+section h2 span.uniqueId {
+  text-decoration: underline;
+}
+section h2 span.myId {
+  font-size: 1.8rem;
+  color: #ff2727;
+}
+.food-img-container {
+  overflow: hidden;
+  width: 80%;
+  max-width: 500px;
+  max-height: 350px;
+  min-width: 250px;
+  border-radius: 20px;
+  display: none;
+}
+img {
+  height: 100%;
+  width: 100%;
+  transform: scale(1);
+  transition: all 0.8s ease-in-out;
+}
+img:hover {
+  transform: scale(1.1);
+}
+@media screen and (max-width: 520px) {
+  body {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  aside {
+    width: 100%;
+    max-width: 100%;
+  }
+  section h2 {
+    align-self: center;
+  }
+}
